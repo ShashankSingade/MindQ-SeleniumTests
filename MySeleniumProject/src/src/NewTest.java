@@ -10,7 +10,7 @@ import org.testng.annotations.AfterMethod;
 	
 public class NewTest {
 	
-	webdriver driver = new firefoxdriver();
+	WebDriver driver = new FirefoxDriver();
 	
   @Test
   public void f() {
@@ -24,8 +24,10 @@ public class NewTest {
 	  assertEquals("Google", Title);	
 	  
   }
-  
-  @BeforeMethod
+  	
+}
+
+@BeforeMethod
   public void beforeMethod() {
 	  
 	  	System.out.println("Starting Tests");

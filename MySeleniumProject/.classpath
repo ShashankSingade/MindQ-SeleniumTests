@@ -9,6 +9,12 @@
 	<classpathentry kind="lib" path="C:/Users/shash/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/shash/Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/shash/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shash/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar" sourcepath="C:/Users/shash/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/MySelenium_workspace/libraries/hamcrest-core-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/MySelenium_workspace/libraries/junit-4.13-beta-3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
