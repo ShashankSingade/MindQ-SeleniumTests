@@ -1,0 +1,43 @@
+package src;
+
+import java.util.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
+public class List_SortingOrder2 {
+
+	public static void main(String[] args) {
+		
+		String Chromepath = "C:\\MySelenium_workspace\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", Chromepath);
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://seleniumpractise.blogspot.com/2019/01/dropdown-demo-for-selenium.html");
+		
+		driver.manage().window().maximize();
+		
+		Select tools1 = new Select(driver.findElement(By.id("tools")));
+		tools1.selectByValue("Cucumber");
+		
+		List<WebElement> myTools = tools1.getOptions();
+		
+		List actualList = new ArrayList();
+		
+		for(WebElement ele:myTools)
+		{
+			String data = ele.getText();
+			actualList.add(data);		
+		}
+		
+		List tempList = new ArrayList();
+		tempList.addAll(actualList);
+		
+		Collections.sort(tempList);
+		
+		Assert.assertTrue(actualList.equals(tempList));		
+	}
+}
